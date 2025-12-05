@@ -37,23 +37,30 @@ button img:hover {
   /* LAYOUT */
   display: flex;
   flex-direction: column;
-  padding: 30px 0;
+  gap: 20px;
+  padding: 0 0 30px 0;
 }
 
 .floatingLayout {
   padding: 10px 20px;
-  margin: 15px;
+  margin: 10px;
   border-radius: var(--contRadius);
   box-shadow: var(--subtleShadow);
 }
 
 /* NAVBAR */
-nav {
+nav.floatingLayout {
   font-family: "Glanzyo";
-  background-color: var(--blue);
+  background-color: var(--green);
   display: flex;
   align-items: center;
   justify-content: end;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+nav h1 {
+  line-height: 1;
 }
 
 /*CURRICULUM*/
@@ -61,29 +68,43 @@ main.Curriculum {
   font-family: Arial;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 25px;
   padding: 30px 25px;
-  width: 80%;
+  width: 75%;
   margin: 0 auto;
+  min-height: 100vh;
 }
 
 main section {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
+  padding: 5px 0 0 0;
 }
 
 main section header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   color: var(--grey);
   font-family: "Glanzyo";
-  margin-bottom: -10px;
+  margin-bottom: -5px;
 }
 
 main section header h2 {
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-weight: 800;
+}
+
+.addBtn {
+  padding: 5px 15px;
+  line-height: 1;
+}
+
+.addBtn:hover {
+  transform: scale(1.05);
+  box-shadow: var(--subtleShadow);
+  background-color: var(--green);
 }
 
 hr {
@@ -91,14 +112,11 @@ hr {
   border-top: 2px solid var(--grey);
 }
 
-article {
+article:not(.profile) {
   display: flex;
   flex-direction: column;
   gap: 2px;
-}
-
-article h3 {
-  font-size: 28px;
+  padding-bottom: 5px;
 }
 
 .profile {
@@ -108,39 +126,63 @@ article h3 {
 .profileHeader {
   display: flex;
   justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
   gap: 10px;
+  transition: 0.1s ease-out transform;
 }
 
 .profileHeader h3 {
-  font-weight: 600;
-  font-size: 1.8em;
+  font-weight: 500;
+  font-size: 28px;
 }
 
 .profileDetails {
   display: flex;
   justify-content: center;
   gap: 20px;
+  font-size: 16px;
 }
 
 .profileAbout {
   font-size: 18px;
   text-align: center;
+  margin: 0 0px;
+  font-style: italic;
 }
 
 .artHeader {
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
 }
 
-.artTitle {
+.artHeader .artTitle {
   display: flex;
+  align-items: center;
   gap: 25px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1;
+}
+
+.artTitle h3 {
+  line-height: 1;
+}
+
+.artDuration {
+  font-weight: 600;
 }
 
 .artDetails {
   display: flex;
   gap: 10px;
+  font-size: 18px;
+}
+
+.artDesc {
+  font-size: 18px;
+  font-style: italic;
 }
 
 /* Editing Form */
@@ -153,7 +195,7 @@ form.floatingLayout {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  color: var(--grey);
+  border-radius: 5px;
 }
 
 form h3 {
@@ -177,28 +219,79 @@ form section {
   grid-template-columns: 30% 70%;
 }
 
-input {
-  color: var(--grey);
-  height: 1.8em;
-  padding: 5px;
+label {
+
+  font-weight: 600;
 }
 
+input {
+  height: 1.8em;
+  padding: 5px;
+  border: 1.5px solid black;
+  border-radius: 3px;
+  line-height: 1;
+  outline: none;
+  transition: ease-in-out 0.1s transform;
+}
+
+
 textarea {
-  color: var(--grey);
   min-height: 90px;
   width: 100%;
   padding: 5px;
+  border: 1.5px solid black;
+  border-radius: 3px;
+  line-height: 1;
+  outline: none;
+  transition: ease-in-out 0.1s transform;
 }
 
-
+input:focus,
+textarea:focus {
+  border-color: #4a90e2;
+  border: 1.5px solid black;
+  transform: scale(1.01);
+}
 
 form button {
   width: fit-content;
-  padding: 5px 35px;
+  padding: 3px 40px 1px 40px;
   margin: 30px auto 0 auto;
+  font-size: 1.1em;
+  font-weight: 600;
+  border-radius: 3px;
   box-shadow: var(--subtleShadow);
 }
 
+
+
 form button:hover {
   transform: scale(1.05);
+}
+
+.profileHeader .editBtn {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+
+}
+
+.editBtn img {
+  width: 20px;
+}
+
+.artBtnCont {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  padding: 5px 8px;
+}
+
+.artBtnCont:hover,
+.profileHeader .editBtn:hover {
+  box-shadow: var(--subtleShadow);
+  background-color: var(--green);
 }

@@ -4,9 +4,10 @@ import Button from "./Button";
 import Form from "./Form";
 import Input from "./Input";
 import editIcon from "../assets/icons/writing.png";
-
-function Article({ id, fields, values, editing, openEdit, closeEdit, onChange }) {
+import delIcon from "../assets/icons/delete.png";
+function Article({ id, fields, values, editing, openEdit, closeEdit, onChange, handleDel }) {
   const editImg = <img src={editIcon} />;
+  const delImg = <img src={delIcon} />;
   const [inputs, setInputs] = useState(values);
 
   useEffect(() => {
@@ -50,10 +51,16 @@ function Article({ id, fields, values, editing, openEdit, closeEdit, onChange })
           <div className="artHeader">
             <div className="artTitle">
               <h3>{content.title}</h3>
-              <Button
-                text={editImg}
-                className="editBtn"
-                handleSubmit={openEdit} />
+              <div className="artBtnCont">
+                <Button
+                  text={editImg}
+                  className="editBtn"
+                  handleSubmit={openEdit} />
+                <Button
+                  text={delImg}
+                  className="delBtn"
+                  handleSubmit={() => handleDel(id)} />
+              </div>
             </div>
 
             <p className="artDuration">{content.date}</p>

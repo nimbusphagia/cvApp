@@ -4,6 +4,7 @@ const withIds = (arr) =>
 
 const cvContent = {
   personal: {
+    //id: crypto.randomUUID(),
     name: "Ignacio Machuca",
     email: "ignacio.machuca@example.com",
     phone: "+51 987 654 321",
