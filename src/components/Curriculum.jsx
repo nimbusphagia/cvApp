@@ -3,7 +3,7 @@ import Section from "./Section.jsx";
 import cvContent from "../data/cvContent.js";
 function Curriculum() {
   return (
-    <main className="Curriculum floatingLayout">
+    <main id="Curriculum" className="Curriculum floatingLayout">
       <Section
         title="About me"
         fields={cvFields.personal}

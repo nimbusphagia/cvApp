@@ -69,10 +69,11 @@ main.Curriculum {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding: 30px 25px;
-  width: 75%;
+  padding: 70px;
+  width: 1080px;
   margin: 0 auto;
-  min-height: 100vh;
+  min-height: 120vh;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 main section {
@@ -96,15 +97,24 @@ main section header h2 {
   font-weight: 800;
 }
 
-.addBtn {
-  padding: 5px 15px;
+.exportBtn {
+  font-family: "Glanzyo";
+  font-size: 22px;
+  background-color: var(--green);
+  margin: auto;
+  padding: 12px 40px;
   line-height: 1;
 }
 
-.addBtn:hover {
-  transform: scale(1.05);
-  box-shadow: var(--subtleShadow);
-  background-color: var(--green);
+.addBtn {
+  padding: 5px 15px;
+  line-height: 1;
+  transition: ease-in 0.1s transform;
+}
+
+.addBtn:hover,
+.exportBtn:hover {
+  transform: scale(1.1);
 }
 
 hr {
@@ -290,8 +300,10 @@ form button:hover {
   padding: 5px 8px;
 }
 
-.artBtnCont:hover,
-.profileHeader .editBtn:hover {
+
+/*
+.profileHeader .editBtn:hover */
+.artBtnCont:hover {
   box-shadow: var(--subtleShadow);
   background-color: var(--green);
 }

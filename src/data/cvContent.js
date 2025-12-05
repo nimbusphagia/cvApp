@@ -2,56 +2,56 @@
 const withIds = (arr) =>
   arr.map(item => ({ ...item, id: crypto.randomUUID() }));
 
+
 const cvContent = {
   personal: {
-    //id: crypto.randomUUID(),
-    name: "Ignacio Machuca",
-    email: "ignacio.machuca@example.com",
-    phone: "+51 987 654 321",
-    address: "Lima, Perú",
+    name: "Alex Rivera",
+    email: "alex.rivera@example.com",
+    phone: "+1 555 123 4567",
+    address: "New York, USA",
     about:
-      "Aspiring software developer with a strong interest in web technologies, clean UI design, and building practical tools. Currently studying Computación e Informática and continuously improving through personal projects."
+      "Motivated software engineer with a passion for front-end development, user experience, and creating efficient, maintainable code. Enjoys learning new frameworks and building web applications that solve real problems."
   },
 
   education: withIds([
     {
-      title: "Computación e Informática",
-      from: "2024-04-01",
-      to: "Today",
-      institution: "Cibertec",
-      location: "Lima, Perú",
+      title: "Bachelor of Science in Computer Science",
+      from: "2020-09-01",
+      to: "2024-06-01",
+      institution: "Metro University",
+      location: "New York, USA",
       description:
-        "Currently studying software development fundamentals, database management, and web technologies."
+        "Studied programming, algorithms, data structures, and web development. Completed multiple projects in full-stack development."
     },
     {
-      title: "Front-End Development Bootcamp",
-      from: "2023-01-01",
-      to: "2023-06-01",
-      institution: "CodeWave Academy",
+      title: "Web Development Bootcamp",
+      from: "2022-03-01",
+      to: "2022-09-01",
+      institution: "CodeCraft Academy",
       location: "Online",
       description:
-        "Hands-on training in HTML, CSS, JavaScript, and introductory React. Built several small web projects."
+        "Intensive training in HTML, CSS, JavaScript, and React. Built several responsive websites and single-page applications."
     }
   ]),
 
   work: withIds([
     {
       title: "Front-End Developer Intern",
-      from: "2025-01-01",
-      to: "2025-06-01",
-      institution: "TechNova Solutions",
+      from: "2024-06-01",
+      to: "2024-12-01",
+      institution: "BrightTech Solutions",
       location: "Remote",
       description:
-        "Implemented UI components, helped maintain the design system, and supported the development of client dashboards."
+        "Developed reusable UI components, collaborated with the design team, and optimized web pages for performance and accessibility."
     },
     {
-      title: "Junior Web Developer (Freelance)",
-      from: "2024-07-01",
-      to: "2024-10-01",
-      institution: "IndieWeb Studio",
-      location: "Lima, Perú",
+      title: "Freelance Web Developer",
+      from: "2023-11-01",
+      to: "2024-05-01",
+      institution: "Self-Employed",
+      location: "Remote",
       description:
-        "Developed landing pages for small businesses, optimized loading performance, and improved accessibility and SEO."
+        "Created custom websites for local businesses, implemented responsive designs, and improved SEO and load times."
     }
   ])
 };
