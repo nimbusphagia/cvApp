@@ -1,43 +1,28 @@
-import { useState } from "react";
 import cvFields from "../data/cvFields.js";
 import Section from "./Section.jsx";
-function Curriculum({ handleDisplay }) {
-  const [editing, setEditing] = useState({ personal: false, education: false, work: false });
-
-  const handleEditing = (key) => {
-    setEditing(prev => ({
-      ...prev,
-      [key]: !prev[key]
-    }));
-  };
-
+import cvContent from "../data/cvContent.js";
+function Curriculum() {
   return (
-    <section className="editingArea">
+    <main className="Curriculum floatingLayout">
       <Section
-        title="Profile"
-        handleSubmit={handleDisplay}
+        title="About me"
         fields={cvFields.personal}
-        editing={editing.personal}
-        handleEdit={() => handleEditing("personal")}
-
+        articles={cvContent.personal}
+        many={false}
       ></Section>
 
       <Section
         title="Education"
-        handleSubmit={handleDisplay}
         fields={cvFields.education}
-        editing={editing.education}
-        handleEdit={() => handleEditing("education")}
+        articles={cvContent.education}
       ></Section>
 
       <Section
         title="Work Experience"
-        handleSubmit={handleDisplay}
         fields={cvFields.work}
-        editing={editing.work}
-        handleEdit={() => handleEditing("work")}
+        articles={cvContent.work}
       ></Section>
-    </section>
+    </main>
   )
 }
 export default Curriculum;

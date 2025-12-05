@@ -1,89 +1,115 @@
+
 const cvFields = {
   personal: [
     {
-      name: "Name",
+      title: "Name",
+      name: "name",
       id: "personalName",
       type: "text"
     },
     {
-      name: "Email",
+      title: "Email",
+      name: "email",
       id: "personalEmail",
       type: "email"
     },
     {
-      name: "Phone",
+      title: "Phone",
+      name: "phone",
       id: "personalPhone",
       type: "tel"
     },
     {
-      name: "Address",
+      title: "Address",
+      name: "address",
       id: "personalAddress",
       type: "text"
     },
     {
-      name: "About me",
+      title: "About me",
+      name: "about",
       id: "personalAbout",
       type: "textarea"
     }
   ],
+
   work: [
     {
-      name: "Job Title",
+      title: "Job Title",
+      name: "title",
       id: "jobTitle",
       type: "text"
     },
     {
-      name: "Company",
+      title: "Company",
+      name: "company",
       id: "jobCompany",
       type: "text"
     },
     {
-      name: "Location",
-      id: "jobLocation",
-      type: "text"
-    },
-    {
-      name: "From",
+      title: "From",
+      name: "from",
       id: "jobFrom",
       type: "date"
     },
     {
-      name: "To",
+      title: "Location",
+      name: "location",
+      id: "jobLocation",
+      type: "text"
+    },
+    {
+      title: "To",
+      name: "to",
       id: "jobTo",
       type: "date"
     },
     {
-      name: "Description",
+      title: "Description",
+      name: "description",
       id: "jobDescription",
       type: "textarea"
     }
   ],
+
   education: [
     {
-      name: "Degree / Program",
+      title: "Degree / Program",
+      name: "title",
       id: "eduDegree",
       type: "text"
     },
     {
-      name: "Institution",
+      title: "Institution",
+      name: "institution",
       id: "eduInstitution",
       type: "text"
     },
     {
-      name: "Location",
-      id: "eduLocation",
-      type: "text"
-    },
-    {
-      name: "From",
+      title: "From",
+      name: "from",
       id: "eduFrom",
       type: "date"
     },
     {
-      name: "To",
+      title: "Location",
+      name: "location",
+      id: "eduLocation",
+      type: "text"
+    },
+    {
+      title: "To",
+      name: "to",
       id: "eduTo",
       type: "date"
     },
+    {
+      title: "Description",
+      name: "description",
+      id: "eduDescription",
+      type: "textarea"
+    }
   ]
-}
+};
+
 export default cvFields;

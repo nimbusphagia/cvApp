@@ -1,6 +1,6 @@
 function Navbar() {
   return (
-    <nav>
+    <nav className="floatingLayout">
       <h1>Curriculum Formatter</h1>
     </nav>
   )

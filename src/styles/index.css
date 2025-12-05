@@ -1,1 +1,67 @@
+/* === BASIC NORMALIZATION === */
 
+/* Remove default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Keep heading sizes but normalize line-height */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  font-weight: inherit;
+  /* optional: keeps them from being super bold */
+}
+
+/* Remove list bullets and indentation */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Reset link appearance but keep color inheritance */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Normalize images */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Buttons don't inherit weird browser styles */
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+/* Inputs and textareas */
+input,
+textarea,
+select {
+  font: inherit;
+  border: 1px solid #ccc;
+  /* optional minimum baseline */
+}
+
+/* Make body a clean slate */
+body {
+  min-height: 100vh;
+  line-height: 1.4;
+  width: 100vw;
+
+}

@@ -1,12 +1,14 @@
 import Button from "./Button.jsx";
-function Form({ children, handleSubmit }) {
+function Form({ children, submit }) {
   return (
-    <form>
-      {children}
+    <form className="floatingLayout" onSubmit={submit}>
+      <h3>Editing</h3>
+      <section>
+        {children}
+      </section>
       <Button
         text="Save"
         className="submitBtn"
-        handleSubmit={handleSubmit}
       ></Button>
     </form>
   )

@@ -1,0 +1,208 @@
+/* FONTS */
+/* Thin */
+@font-face {
+  font-family: "GcNorthSans";
+  src: url("../assets/fonts/NorthSans/GcNorthSansThin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* ExtraLight */
+@font-face {
+  font-family: "GcNorthSans";
+  src: url("../assets/fonts/NorthSans/GcNorthSansExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* Light */
+@font-face {
+  font-family: "GcNorthSans";
+  src: url("../assets/fonts/NorthSans/GcNorthSansLight.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Regular */
+@font-face {
+  font-family: "GcNorthSans";
+  src: url("../assets/fonts/NorthSans/GcNorthSansRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Medium */
+@font-face {
+  font-family: "GcNorthSans";
+  src: url("../assets/fonts/NorthSans/GcNorthSansMedium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* SemiBold */
+@font-face {
+  font-family: "GcNorthSans";
+  src: url("../assets/fonts/NorthSans/GcNorthSansSemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* Bold */
+@font-face {
+  font-family: "GcNorthSans";
+  src: url("../assets/fonts/NorthSans/GcNorthSansBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ExtraBold */
+@font-face {
+  font-family: "GcNorthSans";
+  src: url("../assets/fonts/NorthSans/GcNorthSansExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Thin */
+@font-face {
+  font-family: "OnceAfter";
+  src: url("../assets/fonts/OnceAfter/GcOnceAfterThin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* Thin Italic */
+@font-face {
+  font-family: "OnceAfter";
+  src: url("../assets/fonts/OnceAfter/GcOnceAfterThinItalic.woff2") format("woff2");
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* ExtraLight */
+@font-face {
+  font-family: "OnceAfter";
+  src: url("../assets/fonts/OnceAfter/GcOnceAfterDemoExtraLight.woff2") format("woff2");
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* ExtraLight Italic */
+@font-face {
+  font-family: "OnceAfter";
+  src: url("../assets/fonts/OnceAfter/GcOnceAfterDemoExtltIta.woff2") format("woff2");
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* Light */
+@font-face {
+  font-family: "OnceAfter";
+  src: url("../assets/fonts/OnceAfter/GcOnceAfterDemoLight.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Light Italic */
+@font-face {
+  font-family: "OnceAfter";
+  src: url("../assets/fonts/OnceAfter/GcOnceAfterDemoLightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Regular */
+@font-face {
+  font-family: "OnceAfter";
+  src: url("../assets/fonts/OnceAfter/GcOnceAfterRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Italic (Regular) */
+@font-face {
+  font-family: "OnceAfter";
+  src: url("../assets/fonts/OnceAfter/GcOnceAfterDemoItalic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Medium */
+@font-face {
+  font-family: "OnceAfter";
+  src: url("../assets/fonts/OnceAfter/GcOnceAfterMedium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Medium Italic */
+@font-face {
+  font-family: "OnceAfter";
+  src: url("../assets/fonts/OnceAfter/GcOnceAfterDemoMedIta.woff2") format("woff2");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* SemiBold */
+@font-face {
+  font-family: "OnceAfter";
+  src: url("../assets/fonts/OnceAfter/GcOnceAfterSemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* SemiBold Italic */
+@font-face {
+  font-family: "OnceAfter";
+  src: url("../assets/fonts/OnceAfter/GcOnceAfterSembdIta.woff2") format("woff2");
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* Bold */
+@font-face {
+  font-family: "OnceAfter";
+  src: url("../assets/fonts/OnceAfter/GcOnceAfterDemoBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Bold Italic */
+@font-face {
+  font-family: "OnceAfter";
+  src: url("../assets/fonts/OnceAfter/GcOnceAfterDemoBoldItalic.woff2") format("woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* ExtraBold */
+@font-face {
+  font-family: "OnceAfter";
+  src: url("../assets/fonts/OnceAfter/GcOnceAfterDemoExtraBold.woff2") format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* ExtraBold Italic */
+@font-face {
+  font-family: "OnceAfter";
+  src: url("../assets/fonts/OnceAfter/GcOnceAfterDemoExtbdIta.woff2") format("woff2");
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* Glanzyo*/
+@font-face {
+  font-family: "Glanzyo";
+  src: url("../assets/fonts/Glanzyo/GlanzyoRegular.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* Mogen*/
+@font-face {
+  font-family: "Mogen";
+  src: url("../assets/fonts/Mogen/MogenBold.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}

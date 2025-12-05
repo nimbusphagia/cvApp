@@ -1,13 +1,24 @@
 
-function Input({ name, id, type }) {
+function Input({ label, name, id, type, value = "", onChange }) {
   return (
     <div className="formGroup">
-      <label htmlFor={id}>{name}:</label>
+      <label htmlFor={id}>{label}:</label>
 
       {type !== "textarea" ? (
-        <input id={id} type={type} />
+        <input
+          id={id}
+          name={name}
+          type={type}
+          value={value}
+          onChange={onChange}
+        />
       ) : (
-        <textarea id={id}></textarea>
+        <textarea
+          id={id}
+          name={name}
+          value={value}
+          onChange={onChange}
+        />
       )}
     </div>
   );
